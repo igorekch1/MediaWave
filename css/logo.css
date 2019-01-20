@@ -1,0 +1,104 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+}
+
+.eq {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.eq__bar {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  float: left;
+  width: 0;
+  height: 35px;
+  border-left: 2px solid white;
+  transition: height 0.2s ease-out 0.2s;
+}
+.eq__1 {
+  left: 0;
+}
+.eq__2 {
+  left: 4px;
+}
+.eq__3 {
+  left: 8px;
+}
+.eq__4 {
+  left: 12px;
+}
+.eq__5 {
+  left: 16px;
+}
+.eq__6 {
+  left: 20px;
+}
+.eq__7 {
+  left: 24px;
+}
+.eq__8 {
+  left: 28px;
+}
+.eq--on .eq__bar {
+  animation-name: eq-play;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+.eq--on .eq__1 {
+  animation-duration: 0.6s;
+}
+.eq--on .eq__2 {
+  animation-duration: 0.5s;
+}
+.eq--on .eq__3 {
+  animation-duration: 0.58s;
+}
+.eq--on .eq__4 {
+  animation-duration: 0.52s;
+}
+.eq--on .eq__5 {
+  animation-duration: 0.56s;
+}
+.eq--on .eq__6 {
+  animation-duration: 0.6s;
+}
+.eq--on .eq__7 {
+  animation-duration: 0.64s;
+}
+.eq--on .eq__8 {
+  animation-duration: 0.68s;
+}
+.eq--off .eq__bar {
+  animation-name: eq-stop;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes eq-play {
+  0%, 100% {
+    height: 8px;
+  }
+  50% {
+    height: 25px;
+  }
+}
+@keyframes eq-stop {
+  0% {
+    height: 15px;
+  }
+  100% {
+    height: 3px;
+  }
+}
+
+/*# sourceMappingURL=logo.css.map */

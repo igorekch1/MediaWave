@@ -1,0 +1,186 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ccc;
+}
+
+.container {
+    width: 73vw;
+    margin: 40px auto 0;
+    padding: 20px;
+    overflow: auto;
+    background-color: #eee;
+}
+
+main {
+    float: left;
+    width: 46vw;
+}
+
+main h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 14px 0;
+    border-bottom: 1px solid #999;
+}
+
+main .next {
+    float: right;
+    margin-top: 15px;
+    color: rgba(255,0,0,.8);
+    /* border: 1px solid red; */
+}
+
+main .next:hover {
+    color: rgba(255,0,0,1);
+    cursor: pointer;
+}
+
+main .next-text {
+    margin-right: 4px;
+}
+
+main .fa-angle-right {
+    position: relative;
+    top: 2px;
+}
+
+aside {
+    float: right;
+    width: 25vw;
+    margin-top: -3px;
+}
+
+aside .news-title {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #333;
+    text-align: center;
+}
+
+aside .news-list {
+    list-style-image: url("../images/extra/marker.png");
+}
+
+aside .news-list > li > a {
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+}
+
+aside .news-list > li + li {
+    margin-top: 10px;
+}
+
+aside .news-list > li > a:hover {
+    /* text-decoration: none; */
+    color: rgba(0,0,0,1);
+}
+
+/* Style the tab */
+aside .most-discussed .tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #444;
+}
+  
+  /* Style the buttons inside the tab */
+aside .most-discussed .tab button {
+    width: 33.33333%;
+    background-color: #444;
+    float: left;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+  /* Change background color of buttons on hover */
+aside .most-discussed .tab button:hover {
+    background-color: #333;
+}
+  
+  /* Create an active/current tablink class */
+aside .most-discussed .tab button.active {
+    background-color: #333;
+}
+  
+  /* Style the tab content */
+aside .most-discussed .tabcontent {
+    display: none;
+    padding: 8px 0px 8px 30px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+  
+  /* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+footer {
+    margin-top: 25px;
+}
+
+@media only screen and (max-width:1440px)  {
+    aside .most-discussed .tab button {
+        padding: 12px 12px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        width: 90vw;
+        margin-top: 20px;
+    }
+
+    main table caption {
+        width: 140px;
+    }
+    
+    main, aside {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        margin-top: 80px;
+    }
+
+    aside .news-list{
+        margin: 20px 0;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+    .container {
+        width: 85vw;
+        margin-top: 10px;
+    }
+    
+    aside .most-discussed .news-title {
+        font-size: 16px;
+    }
+
+    aside .most-discussed .tab button {
+        padding:0;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    aside .news-list > li > a{
+        font-size: 14px;
+    }
+}
+

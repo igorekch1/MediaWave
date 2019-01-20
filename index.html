@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MediaWave</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/up.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo-left">
+            <div id="logo">
+                <a href="#" class="btn">
+                    <span class="eq eq--on">
+                        <span class="eq__bar eq__1"></span>
+                        <span class="eq__bar eq__2"></span>
+                        <span class="eq__bar eq__3"></span>
+                        <span class="eq__bar eq__4"></span>
+                        <span class="eq__bar eq__5"></span>
+                        <span class="eq__bar eq__6"></span>
+                        <span class="eq__bar eq__7"></span>
+                        <span class="eq__bar eq__8"></span>
+                    </span>
+                </a>
+                <!-- <img src="./images/plate-logo.png" alt="logo" id="logo-image"> -->
+                <span id="logo-text">MediaWave</span>
+            </div>
+        </div>
+
+        <div class="regit-right">
+            <a href="#"><button class="sign">Login / Create account</button></a>
+        </div>
+    </header>
+
+    <div class="regit animate">
+        <div class="signup-wrapper">
+            <div class="cross"><i class="fas fa-times"></i></div>
+            <div class="create_account">
+                <h2>Create An Account</h2>
+                <a href="#" class="button btn-social btn-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Sign in with Facebook
+                </a>
+                <a href="#" class="button btn-social btn-twitter">
+                    <i class="fab fa-twitter"></i>
+                    Sign in with Twitter
+                </a>
+                <a href="#" class="button btn-social btn-google">
+                    <i class="fab fa-google-plus-g"></i>
+                    Sign in with Google
+                </a>
+                <a href="#" class="button btn-social btn-behance">
+                    <i class="fab fa-behance"></i>
+                    Sign in with Behance
+                </a>
+            </div>
+            <div class="signup">
+                <form class="form">
+                    <fieldset class="username">
+                        <input type="text" placeholder="Username" pattern="^[a-zA-ZА-Яа-яЁё][a-zA-ZА-Яа-яЁё0-9-_\.]{4,20}$" required>
+                    </fieldset>
+                    <fieldset class="email">
+                        <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    </fieldset>
+                    <fieldset class="password">
+                        <input type="password" id="pass" placeholder="Password" pattern = "(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                    </fieldset>
+                    <fieldset class="repeat-password">
+                        <input type="password" id="pass_repeat" placeholder="Repeat password" pattern = "(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                    </fieldset>
+                    <button type="submit" class="button">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- MAIN SECTION START -->
+        <section class="main-section">
+            <div class="container">
+                <h1>Sounds better with MediaWave</h1>
+                <div class="description">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam enim culpa error quas
+                        cupiditate quam maiores, perferendis vero nihil nesciunt!</span>
+                </div>
+                <button class="sign">Sign up for free</button>
+            </div>
+        </section>
+        <!-- MAIN SECTION END -->
+
+        <!-- SECTION SEARCH START -->
+        <section class="search">
+            <div class="hovered"></div>
+            <div class="container">
+                <form>
+                    <input type="text" placeholder="Search for artists, bands, tracks...">
+                    <button type="submit" class="search-icon"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </section>
+        <!-- SECTION SEARCH END -->
+
+        <!-- KODAK SECTION START -->
+        <section class="artist-section kodak">
+            <div class="album-content">
+                <div class="album-image">
+                    <img src="./images/index/kodak.jpg" alt="KODAK IS HERE">
+                </div>
+                <div class="album-description">
+                    <h2>KODAK BLACK</h2>
+                    <div class="title-name">Institution</div>
+                    <div class="button listen playSong">
+                        <span>Listen now</span>
+                    </div>
+                    <div class="button learn">
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- KODAK SECTION AND -->
+
+        <!-- SECTION XXX START -->
+        <section class="video-section artist-section xxx">
+            <div class="album-content">
+                <div class="video-description">
+                    <h2>XXXTENTACION</h2>
+                    <div class="title-name">BAD!</div>
+                    <div class="button listen">
+                        <a href="#">Watch now</a>
+                    </div>
+                    <div class="button learn">
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="artist-video">
+                    <video controls>
+                        <source src="./media/xxx.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION XXX END -->
+
+        <!-- BOOGIE SECTION START -->
+        <section class="artist-section boogie">
+            <div class="album-content">
+                <div class="album-image">
+                    <img src="./images/index/boogie.jpg" alt="KODAK IS HERE">
+                </div>
+                <div class="album-description">
+                    <h2>A BOOGIE WIT DA HOODIE</h2>
+                    <div class="title-name">HOODIE SZN</div>
+                    <div class="button listen playSong">
+                        <span>Listen now</span>
+                    </div>
+                    <div class="button learn">
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BOOGIE SECTION AND -->
+
+        <!-- SECTION NOTYPE START -->
+        <section class="video-section artist-section notype">
+            <div class="album-content">
+                <div class="video-description">
+                    <h2>Rae Sremmurd</h2>
+                    <div class="title-name">No Type</div>
+                    <div class="button listen">
+                        <a href="#">Watch now</a>
+                    </div>
+                    <div class="button learn">
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="artist-video">
+                    <video controls>
+                        <source src="./media/notype.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION NOTYPE END -->
+
+        <!-- SAVAGE SECTION START -->
+        <section class="artist-section savage">
+            <div class="album-content">
+                <div class="album-image">
+                    <img src="./images/index/savage.jpg" alt="KODAK IS HERE">
+                </div>
+                <div class="album-description">
+                    <h2>21 SAVAGE</h2>
+                    <div class="title-name">RED OPPS</div>
+                    <div class="button listen playSong">
+                        <span>Listen now</span>
+                    </div>
+                    <div class="button learn">
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SAVAGE SECTION AND -->
+
+        <!-- SECTION LAMAR START -->
+        <section class="video-section artist-section lamar">
+            <div class="album-content">
+                <div class="video-description">
+                    <h2>Kendrick Lamar</h2>
+                    <div class="title-name">HUMBLE</div>
+                    <div class="button listen">
+                        <a href="#">Watch now</a>
+                    </div>
+                    <div class="button learn">
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="artist-video">
+                    <video controls>
+                        <source src="./media/lamar.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION LAMAR END -->
+
+        <!-- LILSKIES SECTION START -->
+        <section class="artist-section lilskies">
+            <div class="album-content">
+                <div class="album-image">
+                    <img src="./images/index/lilskies.jpg" alt="KODAK IS HERE">
+                </div>
+                <div class="album-description">
+                    <h2>LIL SKIES</h2>
+                    <div class="title-name">Life of a dark rose</div>
+                    <div class="button listen playSong">
+                        <span>Listen now</span>
+                    </div>
+                    <div class="button learn">
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- LILSKIED SECTION AND -->
+    </main>
+
+    <footer>
+        <div class="image text-center">
+            <a href="#" class="btn">
+                <span class="eq eq--on">
+                    <span class="eq__bar eq__1"></span>
+                    <span class="eq__bar eq__2"></span>
+                    <span class="eq__bar eq__3"></span>
+                    <span class="eq__bar eq__4"></span>
+                    <span class="eq__bar eq__5"></span>
+                    <span class="eq__bar eq__6"></span>
+                    <span class="eq__bar eq__7"></span>
+                    <span class="eq__bar eq__8"></span>
+                </span>
+            </a>
+        </div>
+        <div class="markers text-center">
+            <a class="marker marker-black"><i class="fab fa-facebook-f"></i></a>
+            <a class="marker marker-black"><i class="fab fa-twitter"></i></a>
+            <a class="marker marker-black"><i class="fab fa-behance"></i></a>
+            <a class="marker marker-black"><i class="fab fa-linkedin-in"></i></a>
+            <a class="marker marker-black"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <div>
+            <div class="copyright">
+                <span>© MediaWave 2019</span>
+            </div>
+            <div class="madefor">
+                <span>Made with love for great people</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="audio-bottom-wrapper" id="audio_bottom">
+        <div class="audio-container">
+            <audio controls="controls"></audio>
+            <div class="songName">A Boogie Wit da Hoodie - I Did It</div>
+            <div class="close"><i class="fas fa-times"></i></div>
+        </div>
+    </div>
+    <div class="up">
+        <i class="fas fa-sort-up"></i>
+    </div>
+
+    <script src="./script/up.js"></script>
+    <script src="./script/playSong.js"> </script>
+    <script>
+        let sign = document.querySelector(".sign");
+        let cross = document.querySelector(".cross");
+        let regit = document.querySelector(".regit");
+        let mainSection = document.querySelector(".main-section");
+        cross.addEventListener("click", (e) => {
+            regit.style.display = "none"
+            mainSection.style = "opacity: 1;"
+        })
+
+        sign.addEventListener("click", (e) => {
+            e.preventDefault();
+            regit.style.display = "block"
+            mainSection.style = "opacity: .5;"
+        })
+
+        let form = document.querySelector(".form");
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            if (pass.value !== pass_repeat.value) {
+				alert ("Password is incorrect!\nTry again...");
+			} else {
+				window.location.href = "./account.html";
+			}
+        }
+    </script>
+</body>
+
+</html>

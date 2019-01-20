@@ -1,0 +1,275 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ccc;
+}
+
+.container {
+    width: 73vw;
+    margin: 40px auto 0;
+    padding: 20px;
+    background-color: #eee;
+    overflow: auto;
+}
+
+main {
+    float: left;
+    width: 46vw;
+}
+
+main h1 {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+}
+
+main .next {
+    float: right;
+    color: rgba(255,0,0,.8);
+    /* border: 1px solid red; */
+}
+
+main .next:hover {
+    color: rgba(255,0,0,1);
+    cursor: pointer;
+}
+
+main .next-text {
+    margin-right: 4px;
+}
+
+main .fa-angle-right {
+    position: relative;
+    top: 2px;
+}
+
+article {
+    /* height: 30vh; */
+    padding: 10px 10px 20px 0;
+    width: 100%;
+}
+
+article + article {
+    border-top: 1px solid #999;
+}
+
+article:hover {
+    cursor: pointer;
+    background-color: #ccc;
+} 
+
+article .article-text {
+    width: 60%;
+    float: left;
+    color: #000000;
+}
+
+article .comments-container {
+    margin: 40px 0 0 5px;
+}
+
+article .fa-comment,
+article .fa-heart {
+    color: rgba(255,0,0,.5);
+}
+
+article .comment {
+    float: left;
+    margin-right: 10px;
+}
+
+article .number {
+    margin-left: -2px;
+}
+
+article .article-image {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    margin-right: -60px;
+}
+
+aside {
+    float: right;
+    width: 25vw;
+    margin-top: -3px;
+}
+
+aside .news-title {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+aside .news-list {
+    padding: 6px 0 6px 30px;
+    list-style-image: url("../images/extra/marker.png");
+}
+
+aside .news-list > li > a {
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+}
+
+aside .news-list > li + li {
+    margin-top: 10px;
+}
+
+aside .news-list > li > a:hover {
+    /* text-decoration: none; */
+    color: rgba(0,0,0,1);
+}
+
+/* Style the tab */
+aside .most-discussed .tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #444;
+}
+  
+  /* Style the buttons inside the tab */
+aside .most-discussed .tab button {
+    width: 33.33%;
+    background-color: #444;
+    float: left;
+    color: #fff;
+    border: 1px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+  /* Change background color of buttons on hover */
+aside .most-discussed .tab button:hover {
+    background-color: #333333;
+}
+  
+  /* Create an active/current tablink class */
+aside .most-discussed .tab button.active {
+    background-color: #333333;
+}
+  
+  /* Style the tab content */
+aside .most-discussed .tabcontent {
+    display: none;
+    padding: 8px 0px 8px 30px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+  
+  /* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* FOOTER START */
+footer {
+    clear: both;
+    width: 100%;
+    margin-top: 80px;
+}
+/* FOOTER END */
+
+@media only screen and (max-width:1440px) {
+    .container {
+        width: 83vw;
+    }
+
+    article {
+        padding: 10px 10px 40px 0;
+    }
+
+    aside .most-discussed .tab button {
+        padding: 12px 12px;
+    }
+
+    article .article-image {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {   
+    main, aside {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        margin-top: 60px;
+    }
+
+    aside .news-list{
+        margin: 20px 0;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+
+    article .article-image {
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+    .container {
+        margin-top: 10px;
+    }
+    
+    article .article-text {
+        width: 100%;
+        /* float: none; */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    article .article-text h2 {
+        font-size: 20px;
+    }
+
+    article .article-text .description {
+        font-size: 14px;
+    }
+
+    article .comments-container {
+        display: none;
+    }
+
+    article .article-image {
+        padding-top: 0;
+        margin: 0;
+    }
+    aside .most-discussed .news-title {
+        font-size: 16px;
+    }
+
+    aside .most-discussed .tab button {
+        padding:0;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    aside .news-list > li > a{
+        font-size: 14px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+
+
+

@@ -1,0 +1,814 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* SIGNUP START */
+.regit {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 90vh;
+    z-index: 999;
+    overflow: auto;
+}
+
+.regit .cross {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #21c0c0;
+}
+
+.regit .cross:hover {
+    cursor: pointer;
+    color: #139b9b;
+}
+
+.signup-wrapper {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.create_account {
+    background: linear-gradient(134deg, #DC2424, #4A569D);
+    color: white;
+}
+
+.create_account,
+.signup {
+    width: 50%;
+    padding: 80px 50px;
+}
+
+.create_account h2 {
+    margin: 0;
+}
+
+.signup {
+    background-color: #eee;
+}
+
+.form fieldset {
+    border: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+.form fieldset input {
+    width: calc(100% - 55px);
+    /* height: 48px; */
+    color: #333;
+    padding: 15px 40px 15px 15px;
+    font-size: 14px;
+    outline: none !important;
+    border: 1px solid #21c0c0;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+}
+
+.form button {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    outline: none !important;
+    background: linear-gradient(-125deg, #21c0c0, #054242);
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 3px 0 rgba(115, 136, 89, 0.2);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    transition: color 0.4s, background 1s;
+}
+
+.form button:hover {
+    cursor: pointer;
+    color: #000;
+    background: linear-gradient(85deg, #21c0c0, #054242);
+}
+
+  
+.regit .btn-social {
+    display: block;
+    padding: 15px 15px 15px 64px;
+    position: relative;
+    z-index: 1;
+    margin: 20px 0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+.regit .btn-social .fab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    line-height: 3;
+    border-radius: 5px 0 0 5px;
+}
+  
+.regit .btn-facebook {
+    background-color: #3b5999;
+}
+
+.regit .btn-facebook:hover {
+    background-color: #1b46a1;
+}
+  
+.regit .btn-twitter {
+    background-color: #55acee;
+}
+
+.regit .btn-twitter:hover {
+    background-color: #429bdf;
+}
+  
+.regit .btn-google {
+    background-color: #dd4b39;
+}
+
+.regit .btn-google:hover {
+    background-color: #f73a21;
+}
+  
+.regit .btn-behance {
+    background-color: #131418;
+}
+
+.regit .btn-behance:hover {
+    background-color: #000;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media only screen and (max-width:768px) {
+    .signup-wrapper {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .signup-wrapper {
+        width: 100%;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .create_account,
+    .signup {
+        float: none;
+        width: calc(100% - 20px);
+    }
+
+    .regit .btn-social {
+        margin: 10px 0;
+        padding: 7px 0px 7px 40px;
+    }
+
+    .regit .btn-social .fab {
+        line-height: 2;
+        width: 30px;
+    }
+
+    .create_account {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .create_account h2 {
+        font-size: 20px;
+    }
+
+    .signup {
+        text-align: center;
+        padding: 0 10px 20px 10px
+    }
+
+    .form fieldset input {
+        padding: 10px 0px 10px 10px;
+    }
+
+    .form button {
+        width: 80%;
+        height: 30px;
+    }
+
+    .regit .cross {
+        color: #000000;
+    }
+
+    .form fieldset input,
+    .btn-social {
+        font-size: 12px;
+    }
+}
+  
+/* SIGNUP END */
+
+.artist-section {
+    padding: 80px 100px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.artist-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(30px); 
+    -moz-filter: blur(30px);
+    -ms-filter: blur(30px);
+    -o-filter: blur(30px);
+    filter:  blur(30px);
+}
+
+.artist-section .artist-video {
+    display: inline-block;
+    /* width: calc(100% - 600px); */
+    text-align: left;
+    /* border: 1px solid red; */
+    margin-left: 40px;
+    /* float: right; */
+}
+
+.artist-section .artist-video video {
+    width: 600px;
+    height: 400px;
+}
+
+.artist-section .album-image{
+    /* float: left; */
+    display: inline-block;
+    /* margin-right: 40px; */
+}
+
+.artist-section .album-content {
+    position: relative;
+}
+
+.artist-section .album-description {
+    padding-top: 50px;
+    display: inline-block;
+    /* float: right; */
+    vertical-align: top;
+    width: calc(100% - 600px);
+    text-align: right;
+}
+
+.artist-section .video-description {
+    /* padding-top: 50px; */
+    width: 34%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.artist-section .artist-video {
+    width: 50%;
+    text-align: right;
+}
+
+.artist-section .artist-video > video{
+    width: 600px;
+    height: 340px;
+}
+
+.artist-section h2 {
+    margin: 0;
+    font-size: 42px;
+    color: #fff;
+}
+
+.artist-section .title-name {
+    font-size: 38px;
+    color: #fff;
+    margin: 20px 0 40px 0;
+}
+
+.artist-section .button {
+    width: 140px;
+    display: inline-block;
+    padding: 5px 30px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+}
+
+.artist-section .button:hover{
+    cursor: pointer;
+}
+
+.artist-section .button > a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.artist-section .listen {
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.artist-section .listen > a {
+    color: #ffffff;
+}
+
+.artist-section .listen:hover {
+    background-color: rgba(255,255,255,.1);
+}
+
+.artist-section .learn {
+    color: #000000;
+    background-color: #fff;
+}
+
+.artist-section .learn > a {
+    color: #000000;
+}
+
+.artist-section .learn:hover {
+    background-color: #21c0c0;
+
+}
+
+.artist-section .artist-video video {
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+/* HEADER START */
+
+header {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 91px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+    background: #111111;
+    color: #ccccc2;
+}
+
+.logo-left {
+    display: inline-block;
+}
+
+#logo {
+    /* margin-left: 120px; */
+}
+
+#logo .btn {
+    vertical-align: middle;
+}
+
+#logo-text {
+    padding-left: 10px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+}
+
+.regit-right {
+    float: right;
+    /* margin-right: 120px; */
+}
+/* HEADER END */
+
+
+/* MAIN SECTION START */
+.main-section {
+    height: 100vh;
+    padding-left: 30px;
+    background-color: #333333;
+    background-image: url("../images/background/back3.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
+.main-section .container {
+    position: absolute;
+    top: 40%;
+    width: 50vw;
+    text-align: center;
+}
+
+.main-section .description {
+    font-size: 18px;
+    opacity: .7;
+    width: 50vw;
+}
+
+.main-section .sign {
+    width: 140px;
+    margin-top: 30px;
+}
+
+.sign {
+    border: 1px solid #21c0c0;
+    color: #21c0c0;
+    background-color: #111111;
+    padding: 5px;
+}
+
+.sign:hover,
+.sign:focus{
+    cursor: pointer;
+    color: #111111;
+    background-color: #21c0c0;
+    transition: color .7s, background-color .7s;
+}
+
+.main-section .description span {
+    line-height: 28px;
+}
+/* MAIN SECTION END */
+
+/* SEARCH SECTION START */
+.search {
+    position: relative;
+    padding: 40px 0 70px 0;
+    background-color: #111111;
+    border: 1px solid #000000;
+}
+
+.search .container {
+    text-align: center;
+}
+
+.search input {
+    border-radius: 4px;
+    width: 670px;
+    height: 56px;
+    border: none;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(100, 100, 100, 0.75);
+    box-shadow: 0px 1px 10px 0px rgba(100, 100, 100, 0.75);
+    margin-top: 28px;
+    padding-left: 25px;
+}
+
+.search .search-icon{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+    color: #90a4ae;
+    font-size: 14px;
+}
+
+.search input::-webkit-input-placeholder{
+    font-weight: 500;
+    color: #90a4ae;
+}
+
+.search input:-ms-input-placeholder{
+    font-weight: 500;
+    color: #90a4ae;
+}
+
+.search input::-ms-input-placeholder{
+    font-weight: 500;
+    color: #90a4ae;
+}
+
+.search input::placeholder{
+    font-weight: 500;
+    color: #90a4ae;
+}
+
+.search .hovered {
+    background-image: url("../images/background/waves.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.search:hover .hovered {
+    opacity: .3;
+    transition: opacity .5s;
+}
+
+.search .container {
+    position: relative;
+    z-index: 1;
+}
+/* SEARCH SECTION END */
+
+/* KODAK SECTION START */
+.kodak::before {
+    background: #999999 url("../images/index/kodak.jpg") 50% 80% no-repeat;
+    background-size: cover;
+}
+/* KODAK SECTION END */
+
+/* XXX NOTYPE LAMAR SECTION START */
+.xxx::before,
+.notype::before,
+.lamar::before {
+    background: #999999 url("../images/index/line.png") -180px -80px;
+    filter: blur(0);
+}
+/* XXX NOTYPE LAMAR SECTION END */
+
+/* KODAK SECTION START */
+.boogie::before {
+    background: #999999 url("../images/index/boogie.jpg") 50% 30% no-repeat;
+    background-size: cover;
+}
+/* KODAK SECTION END */
+
+/* SAVAGE SECTION START */
+.savage::before {
+    background: #999999 url("../images/index/savage.jpg") 0% 90% no-repeat;
+    background-size: cover;
+}
+/* SAVAGE SECTION END */
+
+/* KODAK SECTION START */
+.lilskies::before {
+    background: #999999 url("../images/index/rose.jpg") 0% 20% no-repeat;
+    background-size: cover;
+}
+/* KODAK SECTION END */
+
+/* FOOTER START */
+footer {
+    margin-top: 20px;
+}
+/* FOOTER END */
+
+/* AUDIO SECTION BOTTOM START */
+.audio-bottom-wrapper {
+    border: 1px solid #999;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    display: none;
+    z-index: 100;
+}
+
+.audio-container {
+    position: relative;
+    width: 60%;
+    padding: 5px 20px;
+    margin: 0 auto;
+    background-color: #eee;
+    border-radius: 30px;
+}
+
+.audio-container audio{
+    width: 75%;
+    height: 30px;
+}
+
+.audio-container audio:hover{
+    cursor: pointer;
+}
+
+.audio-container .songName {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.audio-container .close {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    right: 15px;
+}
+
+.audio-container .close:hover i{
+    cursor: pointer;
+    color: rgb(0,0,0);
+}
+
+.audio-container .close i {
+    color: rgb(255,0,0);
+}
+/* AUDIO SECTION BOTTOM END */
+
+.up {
+    color: #fff;
+}
+
+/* MEDIA SECTION START */
+@media only screen and (max-width: 1440px) {  
+    .main-section .description {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .artist-section {
+        padding: 80px 40px;
+    }
+
+    .main-section .container {
+        width: 92%;
+    }
+
+    .main-section .description {
+        width: 100%;
+    }
+
+    .artist-section .album-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .artist-section .album-description {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .artist-section .video-description {
+        display: block;
+        margin-bottom: 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .artist-section .artist-video {
+        width: calc(100% - 80px);
+        text-align: center;
+    }
+
+    .xxx::before,
+    .notype::before,
+    .lamar::before {
+        background: #999999 url("../images/index/line.png") -120px -100px;
+        filter: blur(0);
+    }
+
+    .audio-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .audio-container audio{
+        width: 65%;
+    }
+
+    .audio-container .songName {
+        width: 30%
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        padding: 0;
+    }
+    
+    .logo-left {
+        display: none;
+    }
+
+    .regit-right {
+        float: none;
+        text-align: center;
+    }
+
+    .main-section {
+        padding: 0;
+    }
+
+    .main-section .container {
+        position: absolute;
+        top: 20%;
+        width: 99%;
+        text-align: center;
+    }
+
+    .main-section h1 {
+        font-size: 24px;
+    }
+
+    .main-section .description {
+        width: 95%;
+        margin: 70px 0 0 10px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .search {
+        padding: 0 0 30px 0;
+    }
+
+    .search input {
+        width: 90%;
+        height: 40px;
+    }
+
+    .search .search-icon{
+        position: absolute;
+        top: 55%;
+        right: 2%;
+    }
+
+    .artist-section {
+        padding: 20px 10px;
+    }
+
+    .artist-section .album-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .artist-section .album-description h2,
+    .artist-section .video-description h2 {
+        font-size: 28px;
+    }
+
+    .artist-section .album-description .title-name,
+    .artist-section .video-description .title-name {
+        font-size: 24px;
+    }
+
+    .artist-section .button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .artist-section .button +.button {
+        margin-top: 10px;
+    }
+
+    .artist-section .video-description {
+        margin-bottom: 20px;
+    }
+
+    .artist-section .artist-video {
+        /* width: calc(100% + 25px); */
+        width: 100%;
+        height: 200px;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .artist-section .artist-video video {
+        width: 90%;
+        height: 200px;
+    }
+
+    .audio-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .audio-container audio{
+        width: 59%;
+        margin-left: -10px;
+    }
+
+    .audio-container .songName {
+        width: 35%;
+        margin-left: 0;
+    }
+
+    .audio-container .close {
+        top: 25%;
+        right: 5px;
+    }
+    
+}
+
+/* MEDIA SECTION END */

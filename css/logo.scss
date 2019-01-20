@@ -1,0 +1,109 @@
+.btn {
+	position:relative;
+	display:inline-block;
+	border: 1px solid white;
+	width:40px;
+	height:40px;
+}
+.eq {
+		position: absolute;
+		top:7px; left:5px;
+		display: block;
+		width:30px;
+		height:30px;
+	
+	&__bar {
+		position: absolute;
+		bottom:0;
+		display: block;
+		float:left;
+		width: 0; height:35px;
+		border-left:2px solid white;
+		transition:height 0.2s ease-out 0.2s;
+	}
+	
+	&__1 {
+		left:0;
+	}
+	&__2 {
+		left:4px;
+	}
+	&__3 {
+		left:8px;
+	}
+	&__4 {
+		left:12px;
+	}
+	&__5 {
+		left:16px;
+    }
+    &__6 {
+		left:20px;
+    }
+    &__7 {
+		left:24px;
+    }
+    &__8 {
+		left:28px;
+	}
+	
+	&--on {
+		.eq__bar {
+			animation-name: eq-play;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease;
+			animation-fill-mode: both;
+		}
+		//Offset durations for randomized motion
+		.eq__1 {
+			animation-duration: 0.6s;
+		}
+		.eq__2 {
+			animation-duration: 0.5s;
+		}
+		.eq__3 {
+			animation-duration: 0.58s;
+		}
+		.eq__4 {
+			animation-duration: 0.52s;
+		}
+		.eq__5 {
+			animation-duration: 0.56s;
+        }
+        .eq__6 {
+			animation-duration: 0.6s;
+        }
+        .eq__7 {
+			animation-duration: 0.64s;
+        }
+        .eq__8 {
+			animation-duration: 0.68s;
+		}
+	}
+	//Switch to off animation
+	&--off {
+		.eq__bar {
+			animation-name:eq-stop;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+		}
+	}
+}
+
+
+@keyframes eq-play {
+  0%, 100% {
+    height: 8px;
+  }
+  50% {
+    height: 25px;
+  }
+}
+@keyframes eq-stop {
+  0% {
+    height: 15px;
+  }
+  100% {
+    height: 3px;
+  }
+}

@@ -1,0 +1,70 @@
+footer {
+    /* margin-top: 140px; */
+    text-align: center;
+    background-color: #111111;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .image {
+    padding: 140px 0 27px 0;
+}
+
+footer .marker + .marker {
+    margin-left: 20px;
+}
+
+footer .markers {
+    padding-bottom: 80px;
+}
+
+footer .copyright {
+    margin-bottom: 4px;
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: .5em;
+    color: #999999;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .madefor {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #999;
+    line-height: 24px;
+    padding-bottom: 85px;
+}
+
+
+footer .marker {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 23px;
+    transform: rotate(45deg);
+}
+
+footer .marker-black {
+    color: #fff;
+    background: #111111;
+    box-sizing: padding-box;
+    border: 1px solid #fff;
+}
+
+footer .marker  i {
+    font-size: 14px;
+    transform: rotate(315deg);
+}
+
+footer .marker:hover,
+footer .marker:focus {
+    color: #21c0c0;
+    border: 1px solid #21c0c0;
+    cursor: pointer;
+    transition: color 0.4s, border 0.4s;
+}

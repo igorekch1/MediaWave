@@ -1,0 +1,482 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ccc;
+}
+
+.container {
+    width: 73vw;
+    margin: 40px auto 0;
+    padding: 20px;
+    overflow: auto;
+    background-color: #eee
+}
+
+main {
+    float: left;
+    width: 44vw;
+    padding: 0px 20px 20px 20px;
+    border: 1px solid #ccc;
+}
+
+main h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 14px 0;
+}
+
+main .posted {
+    line-height: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+main .image-post img{
+    width: 100%;
+}
+
+main .posted .whoposted {
+    color: red;
+}
+
+main .delimeter {
+    margin: 0 4px;
+}
+
+main .social ul {
+    padding: 0;
+}
+
+main .social ul > li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+main .social li + li {
+    margin-left: 10px;
+}
+
+main .social li > i {
+    margin: 17.5px;
+}
+
+main .social li:hover {
+    cursor: pointer;
+}
+
+main .social .fa-comment {
+    margin: 17.5px 32px;
+}
+
+main .social .facebook {
+    background-color: #3b5998;
+    color: #ffffff;
+}
+
+main .social .twitter {
+    background-color: #428bca;
+    color: #ffffff;
+}
+
+main .social .telegram {
+    background-color: #2ca5e0;
+    color: #ffffff;
+}
+
+main .social .posts {
+    width: 90px;
+    background-color: #dc3d31;
+    color: #ffffff;
+}
+
+main .social .posts i {
+    margin-right: 5px;
+}
+
+main .description {
+    margin: 20px 0;
+    line-height: 24px;
+}
+
+main .description .descr-start {
+    color: #555;
+}
+
+main .description .descr-ref {
+    text-decoration: none;
+    color: red;
+}
+
+main .description .descr-ref:hover {
+    text-decoration: underline;
+}
+
+main .postComment {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main .postComment legend {
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+main .postComment fieldset {
+    border: 2px solid rgba(255, 0, 0, 0.418);
+}
+
+main .postComment form input,
+main .postComment form textarea,
+main .postComment form button {
+    display: block;
+}
+
+main .postComment form button {
+    width: 100%
+}
+
+main .postComment form input {
+    width: calc(100% - 3.3px);
+    /* width: 99.4%; */
+}
+
+main .postComment form textarea {
+    width: calc(100% - 5.3px);
+    /* width: 99.3%; */
+}
+
+main .postComment form input,
+main .postComment form button {
+    height: 40px;
+}
+
+main .postComment form textarea {
+    resize: none;
+}
+
+main .postComment form button {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+main .postComment form button:hover {
+    cursor: pointer;
+}
+
+main .postComment form input::-webkit-input-placeholder,
+main .postComment form textarea::-webkit-input-placeholder{
+    padding: 10px 0 0 10px;
+}
+main .postComment form input:-ms-input-placeholder,
+main .postComment form textarea:-ms-input-placeholder{
+    padding: 10px 0 0 10px;
+}
+main .postComment form input::-ms-input-placeholder,
+main .postComment form textarea::-ms-input-placeholder{ 
+    padding: 10px 0 0 10px;
+}
+main .postComment form input:-moz-placeholder,
+main .postComment form textarea:-moz-placeholder { 
+    padding: 10px 0 0 10px;
+}
+main .postComment form input::-moz-placeholder,
+main .postComment form textarea::-moz-placeholder { 
+    padding: 10px 0 0 10px;
+}
+main .postComment form input::placeholder,
+main .postComment form textarea::placeholder{ 
+    padding: 10px 0 0 10px;
+}
+
+main article {
+    border: 1px solid #555;
+    /* width: 100%; */
+    padding: 15px;
+    margin-top: 30px;
+}
+
+main article .userComment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+
+main article .userComment .forUser {
+    display: inline-block;
+    /* position: absolute; */
+    /* top: 50%; */
+    height: 40px;
+    width: 195px;
+    margin-left: 8px;
+    vertical-align: middle;
+    line-height: 20px;
+} 
+
+main article .userComment .forUser .userName{
+    margin-top: 3px;
+}
+
+main article .userComment .comment {
+    margin: 20px 0 25px 0;
+}
+
+main article .icons {
+    text-align: right;
+}
+
+main article .icons, 
+main article .forUser .date {
+    color: #777;
+}
+
+main article .icons .fire:hover,
+main article .icons .reply:hover {
+    color: red;
+    cursor: pointer;
+}
+
+main article .icons .fire:active,
+main article .icons .reply:active {
+    color: red;
+    /* cursor: pointer; */
+}
+
+main article i {
+    margin-right: 4px;
+}
+
+main article .fire {
+    margin-right: 25px;
+}
+
+main .video {
+    width: 100%;
+    text-align: center;
+}
+
+main iframe {
+    /* width: 640px;
+    height: 360px;  */
+    width: 100%;
+    height: 500px;
+}
+
+aside {
+    float: right;
+    width: 25vw;
+}
+
+aside .news-title {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+}
+
+aside .news-list {
+    list-style-image: url("../images/extra/marker.png");
+}
+
+aside .news-list > li > a {
+    text-decoration: none;
+    color: rgba(0,0,0,.9);
+}
+
+aside .news-list > li + li {
+    margin-top: 10px;
+}
+
+aside .news-list > li > a:hover {
+    /* text-decoration: none; */
+    color: rgba(0,0,0,1);
+}
+
+/* Style the tab */
+aside .most-discussed .tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #444;
+}
+  
+  /* Style the buttons inside the tab */
+aside .most-discussed .tab button {
+    width: 33.33%;
+    background-color: #444;
+    float: left;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+  /* Change background color of buttons on hover */
+aside .most-discussed .tab button:hover {
+    background-color: #333;
+}
+  
+  /* Create an active/current tablink class */
+aside .most-discussed .tab button.active {
+    background-color: #333;
+}
+  
+  /* Style the tab content */
+aside .most-discussed .tabcontent {
+    display: none;
+    padding: 8px 0px 8px 30px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+  
+  /* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+footer {
+    margin-top: 25px;
+}
+
+@media only screen and (max-width:1440px) {
+    main .video iframe {
+        height: 380px; 
+    }
+
+    aside .most-discussed .tab button {
+        padding: 12px 12px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        width: 83vw;
+    }
+
+    main, aside {
+        float: none;
+        width: 100%;
+    }
+
+    main {
+        width: 93.5%;
+        margin-right: 40px;
+    }
+
+    main .video iframe {
+        height: 340px;
+    }
+
+    aside {
+        margin-top: 60px;
+    }
+
+    aside .news-list{
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        width: 86vw;
+        margin-top: 0px;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    main .social {
+       text-align: center;
+    }
+
+    main .social ul > li{
+        width: 30px;
+        height: 30px;
+    }
+
+    main .social li > i {
+        margin: 7.5px 0 0 -1.5px;
+    }
+
+    main .social .posts {
+        width: 70px;
+    }
+
+    main .social .fa-comment {
+        margin: 8.5px 0 0 0px;
+    }
+
+    main .description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    main .video iframe {
+        height: 180px;
+    }
+
+    main .postComment {
+        width: 100%;
+    }
+
+    main .postComment form input,
+    main .postComment form button {
+        height: 30px;
+    }
+
+    main article .userComment img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    main article .userComment .forUser {
+        display: inline-block;
+        height: 30px;
+        width: 160px;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: -5px;
+    } 
+
+    main article .userComment .comment {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 0 15px 0;
+    }
+
+    aside {
+        margin-top: 40px;
+    }
+
+    aside .most-discussed .news-title {
+        font-size: 16px;
+    }
+
+    aside .most-discussed .tab button {
+        padding:0;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    aside .news-list > li > a{
+        font-size: 14px;
+    }
+}
+
+
+

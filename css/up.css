@@ -1,0 +1,34 @@
+/* ARROW-UP START */
+.up {
+    display: inline-block;
+    position: fixed;
+    right: 32px;
+    bottom: 0;
+    color: rgba(0,0,0,.75);
+    font-size: 36px;
+    z-index: 999;
+    margin-bottom: -5px;
+}
+
+.up:hover,
+.up:focus,
+.up:active {
+    cursor: pointer;
+    color: rgba(0,0,0,1);
+}
+
+@media only screen and (max-width:768px) {
+    .up {
+        right: 10px;
+        margin-bottom: -7px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .up {
+        font-size: 28px;
+        right:3px;
+        margin-bottom: -12px;
+    }
+}
+/* ARROW-UP END */
